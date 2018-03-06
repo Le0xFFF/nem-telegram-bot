@@ -122,8 +122,8 @@ function sendStatsDataToChat(chatId) {
   const msg = "Price movements: " +
     "\n1h" + getSignIcon(h1) + "" + h1 + "% | 24h" + getSignIcon(h24) + "" + h24 + "% | " + "7d" + getSignIcon(d7) + "" + d7 + "%" +
     "\nVolume (24h): " +
-    "\n" + getSignIcon(volUsd) + Constants.ISO_SYMBOL_USD + currency.format(volUsd, usFormat) +
-    " | " + getSignIcon(volEur) + Constants.ISO_SYMBOL_EUR + currency.format(volEur, usFormat);
+    "\n" + Constants.ISO_SYMBOL_USD + currency.format(volUsd, usFormat) +
+    " | " + Constants.ISO_SYMBOL_EUR + currency.format(volEur, usFormat);
 
   sendMessage(chatId, msg);
 }
