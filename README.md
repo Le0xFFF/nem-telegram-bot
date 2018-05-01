@@ -27,6 +27,9 @@ pm2 start cmcdataimport.js -i 0 --name "cmcbot"
 pm2 start nembot.js -i 0 --name "nembot"
 ```
 
+__Important notes:__  
+[Bugfix: #319](https://github.com/yagop/node-telegram-bot-api/issues/319)
+
 #### License
 Dual licensed under the MIT and LGPL licenses:
 

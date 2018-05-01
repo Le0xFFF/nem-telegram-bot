@@ -187,11 +187,11 @@ function getPrice(curr) {
       break;
     case Constants.ISO_CODE_EUR:
       var inEur = parseFloat(cacheObj.data.price_eur);
-      priceTag = inEur.toFixed(3);
+      priceTag = inEur.toFixed(2);
       break;
     case Constants.ISO_CODE_USD:
       var inUsd = parseFloat(cacheObj.data.price_usd);
-      priceTag = inUsd.toFixed(3);
+      priceTag = inUsd.toFixed(2);
       break;
     default:
       priceTag = "Unsupported currency";
